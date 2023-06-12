@@ -29,3 +29,13 @@ git merge
     7  git push origin main
     8  git pull origin main
     9  history
+
+
+echo "# aula-git" >> README.md
+git init
+git add README.md
+git commit -m "primeiro commit"
+git remote add origin https://github.com/dev-rfreitas/aula01.git
+git branch -M main
+git push -u origin main
+
