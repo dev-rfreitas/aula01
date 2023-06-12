@@ -37,8 +37,10 @@ git remote add origin https://github.com/dev-rfreitas/aula01.git
 git branch -M main
 git push -u origin main
 
-git branch # é igual a show branch
-
-
 
 git branch <nome> # criar branch nova
+git branch # é igual a show branch
+git checkout <nome> # entrando na branch desejada
+
+
+git merge <nome da branch> # puxa todos os arquivos pra branch local para branch chamada 
