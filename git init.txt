@@ -8,16 +8,14 @@ github  é uma rede social de código
 
 git init
 
-git status
-git add
-git commit
+git status # verificar se algo foi mudado, adicionado ou gerado
+git add .  # seleciona tudo dentro da pasta para preparação 
+git commit -m "nome do commit" # comita para preparação
 
-git add origin
-git push
+
+git push origin main # empurra para nuvem
+git pull origin main # puxa da nuvem
 git pull
-
-git branch
-git merge
 
 
     1  git clone https://github.com/dev-rfreitas/aula01.git
@@ -39,3 +37,8 @@ git remote add origin https://github.com/dev-rfreitas/aula01.git
 git branch -M main
 git push -u origin main
 
+git branch # é igual a show branch
+
+
+
+git branch <nome> # criar branch nova
