@@ -1,0 +1,19 @@
+gi é um versionamento de código
+github  é uma rede social de código
+
+
+
+
+git init
+
+git status
+git add
+git commit
+
+git add origin
+git push
+git pull
+
+git branch
+git merge
+
