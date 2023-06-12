@@ -19,3 +19,13 @@ git pull
 git branch
 git merge
 
+
+    1  git clone https://github.com/dev-rfreitas/aula01.git
+    2  git status
+    3  git add .
+    4  git status
+    5  git commit -m "primeiro commit"
+    6  git log
+    7  git push origin main
+    8  git pull origin main
+    9  history
