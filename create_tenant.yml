@@ -1,0 +1,17 @@
+---
+
+- name: playbook for testing tenants
+  hosts: apic
+  connection: local
+  gather_facts: no
+
+  tasks:
+  - name: Add a new tenant
+    aci_tenant:
+      hostname: https://sandboxapicdc.cisco.com/
+      username: admin
+      password: !v3G@!4@Y
+      tenant: TN_Freita
+      description: From Ansible
+      state: present
+      validate_certs: false
