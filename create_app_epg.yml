@@ -5,7 +5,7 @@
   connection: local
   gather_facts: no
   vars_files:
-    - /home/semaphore/external_vars.yml
+    - https://github.com/dev-rfreitas/aula01/blob/main/external_vars.yml
 
   tasks:
   - name: create app network profile
