@@ -1,4 +1,4 @@
- ---
+---
 
 - name: Creating EPGs
   hosts: apic
@@ -6,7 +6,7 @@
   gather_facts: no
   vars_files:
     - /home/semaphore/external_vars.yml
-
+    
   tasks:
   - name: Associating EPG to Bridge Domain
     aci_epg:
