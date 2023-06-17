@@ -17,15 +17,3 @@
       username: "{{ user }}"
       password: "{{ pass }}"
       validate_certs: false
-
-  - name: ensure web epg exists
-    aci_epg:
-      epg: "{{ epg }}"
-      bd: "{{ bd }}"
-      ap: "{{ ap }}"
-      tenant: "{{ tenant }}"
-      state: present
-      hostname: "{{ inventory_hostname }}"
-      username: "{{ user }}"
-      password: "{{ pass }}"
-      validate_certs: false
