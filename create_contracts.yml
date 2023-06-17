@@ -8,7 +8,7 @@
   tasks:
     - name: ensure contracts exist
       aci_contract:
-        name: "{{ contract_name }}"
+        name: "{{ ct }}"
         tenant: "{{ tenant }}"
         host: "{{ inventory_hostname }}"
         username: "{{ user }}"
