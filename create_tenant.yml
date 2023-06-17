@@ -1,17 +1,19 @@
 ---
 
-- name: playbook for testing tenants
+- name: Creating Tenants
   hosts: apic
   connection: local
   gather_facts: no
+  vars_files:
+    - /home/semaphore/external_vars.yml
 
   tasks:
   - name: Add a new tenant
     aci_tenant:
-      hostname: 10.10.20.14
-      username: admin
-      password: C1sco12345
-      tenant: TN_Freitas
-      description: From Ansible
+      hostname: "{{ inventory_hostname }}"
+      username: "{{ user }}"
+      password: "{{ pass }}"
+      tenant: "{{ tenant }}"
+      description: "{{ description }}"
       state: present
       validate_certs: false
