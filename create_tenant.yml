@@ -4,6 +4,7 @@
   hosts: apic
   connection: local
   gather_facts: no
+  remote_Src: yes
   vars_files:
     - https://raw.githubusercontent.com/dev-rfreitas/aula01/main/external_vars.yml
     
