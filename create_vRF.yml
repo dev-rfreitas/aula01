@@ -8,7 +8,7 @@
     - external_vars.yml
 
   tasks:
-  - name: Ensure VRF for tenant exists
+  - name: Ensure vRF for tenant exists
     aci_vrf:
       vrf: "{{ vrf.name }}"
       description: "{{ vrf.description }}"
