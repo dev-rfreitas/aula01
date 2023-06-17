@@ -8,7 +8,7 @@
     - /home/semaphore/external_vars.yml
 
   tasks:
-  name: Associating EPG to Bridge Domain
+  - name: Associating EPG to Bridge Domain
     aci_epg:
       epg: "{{ epg }}"
       bd: "{{ bd }}"
