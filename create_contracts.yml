@@ -4,6 +4,8 @@
   hosts: apic
   connection: local
   gather_facts: no
+  vars_files:
+    - /home/semaphore/external_vars.yml
 
   tasks:
     - name: ensure contracts exist
