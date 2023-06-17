@@ -10,10 +10,10 @@
   tasks:
   - name: Associating EPG to Bridge Domain
     aci_epg:
-      epg: "{{ epg }}"
-      bd: "{{ bd }}"
-      ap: "{{ ap }}"
-      tenant: "{{ tenant }}"
+      epg: "{{ ap.epg }}"
+      bd: "{{ bd.name }}"
+      ap: "{{ ap.name }}"
+      tenant: "{{ ap.tenant }}"
       state: present
       hostname: "{{ inventory_hostname }}"
       username: "{{ user }}"
