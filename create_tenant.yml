@@ -1,14 +1,10 @@
 ---
-
-- name: playbook for testing tenants
-  hosts: all
-  connection: local
-  gather_facts: no
-
-  tasks:
-  - name: Add a new tenant
-    aci_tenant:
-      tenant: TN_Freita
-      description: From Ansible
-      state: present
-      validate_certs: false
+- name: Add a new tenant
+  cisco.aci.aci_tenant:
+    host: 10.10.20.14
+    username: admin
+    password: C1sco1234
+    tenant: production
+    description: From Ansible
+    state: present
+  delegate_to: localhost
