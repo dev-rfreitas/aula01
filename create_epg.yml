@@ -1,0 +1,21 @@
+ ---
+
+- name: Creating EPGs
+  hosts: apic
+  connection: local
+  gather_facts: no
+  vars_files:
+    - /home/semaphore/external_vars.yml
+
+  tasks:
+  name: Associating EPG to Bridge Domain
+    aci_epg:
+      epg: "{{ epg }}"
+      bd: "{{ bd }}"
+      ap: "{{ ap }}"
+      tenant: "{{ tenant }}"
+      state: present
+      hostname: "{{ inventory_hostname }}"
+      username: "{{ user }}"
+      password: "{{ pass }}"
+      validate_certs: false
