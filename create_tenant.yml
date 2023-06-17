@@ -1,7 +1,7 @@
 ---
 
 - name: playbook for testing tenants
-  hosts: apic
+  hosts: all
   connection: local
   gather_facts: no
 
