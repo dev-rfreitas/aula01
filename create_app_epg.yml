@@ -21,7 +21,7 @@
   - name: Creating EPG
     aci_epg:
       epg: "{{ epg }}"
-      bd: "{{ bd }}"
+      bd: "{{ bd.name }}"
       ap: "{{ ap }}"
       tenant: "{{ tenant }}"
       state: present
