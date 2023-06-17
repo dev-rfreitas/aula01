@@ -8,7 +8,7 @@
   tasks:
   - name: Add a new tenant
     aci_tenant:
-      hostname: https://10.10.20.14/
+      hostname: https://10.10.20.14
       username: admin
       password: C1sco12345
       tenant: TN_Freitas
