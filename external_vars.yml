@@ -1,0 +1,18 @@
+inventory_hostname: 10.10.20.14
+user: admin                    
+pass: C1sco12345
+tenant: Tn_Freitas
+description: From Ansible
+ap: Prodemge-ap
+epg: vlan10_epg
+vrf:
+  name: Tn_Freitas_vRF
+  description: From Ansible
+  tenant: Tn_Freitas
+
+bd:
+  name: vlan10_bd
+  vrf: Tn_Freitas_vRF
+  tenant: Tn_Freitas
+
+ct: ct_01
